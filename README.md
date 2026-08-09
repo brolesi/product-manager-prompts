@@ -11,10 +11,10 @@
 ║   ██║     ██║ ╚═╝ ██║    ██║     ██║  ██║╚██████╔╝██║ ╚═╝ ██║██║        ██║   ███████║
 ║   ╚═╝     ╚═╝     ╚═╝    ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝        ╚═╝   ╚══════╝
 ║                                                                         ║
-║   108 practical prompt assets for AI-assisted product management        ║
+║   119 practical prompt assets for AI-assisted product management        ║
 ║   ChatGPT • Claude • Copilot • Gemini • and others                      ║
 ║                                                                         ║
-║   Community Build v2.3 • July 17, 2026 • CC BY-NC-SA 4.0                ║
+║   Community Build v2.5 • August 9, 2026 • CC BY-NC-SA 4.0               ║
 ╚═════════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -38,6 +38,7 @@ You know the situation; you want execution-quality output in one pass. Go to **[
 - Map who matters and how to engage them → [stakeholder-map](prompts/stakeholder-map-prompt-template.md)
 - Decode what an inbound ask really wants → [incoming-request-breakdown](prompts/incoming-request-breakdown.md)
 - Kill the launch on paper before reality does → [premortem](prompts/premortem-prompt-template.md)
+- Lose the legacy product without losing the legacy customer → [EOL suite](#product-end-of-life-eol)
 - Write user stories engineers don't hate → [user-story](prompts/user-story-prompt-template.md)
 - Frame an initiative as testable hypotheses → [lean-ux-canvas](prompts/lean-ux-canvas-prompt-template.md)
 - Design an agentic AI system responsibly → [agent-strategy-canvas](prompts/agent-strategy-canvas-prompt-template.md)
@@ -54,6 +55,22 @@ You have a fuzzy situation and want a guided working session that ends in the fi
 - Problem statement + "How might we" → [problem-framing-canvas-workshop](workshops/problem-framing-canvas-workshop.md)
 - Structured user-pain research table → [painstorming-workshop](workshops/painstorming-workshop.md)
 - Product/feature sunset plan, gated section by section → [product-sunset-workshop](workshops/product-sunset-workshop.md)
+
+<a id="product-end-of-life-eol"></a>
+### "I need to lose the legacy product without losing the legacy customer"
+
+PMs sweat pricing, P&Ls, business cases, and build/buy/partner decisions. EOL rarely makes that list -- which is exactly why it goes badly. Nobody practices the thing they think they'll figure out when it happens. These prompts cover the full EOL lifecycle, and every one of them right-sizes the effort so a minor feature deprecation gets a short punch list while a flagship retirement gets the full cross-functional playbook.
+
+| Prompt | Best For | Start Here When... |
+|--------|----------|--------------------|
+| **[eol-readiness-assessment](prompts/eol-readiness-assessment.md)** | Go/no-go decision: should we sunset this at all? | Someone says "we should probably kill this" |
+| **[eol-checklist](prompts/eol-checklist.md)** | Phase-gated tactical checklist across up to 15 functional areas | The decision is made and you need the operational plan |
+| **[eol-stakeholder-sequence](prompts/eol-stakeholder-sequence.md)** | Who to talk to, in what order, and what each conversation covers | You need to socialize the decision without creating fires |
+| **[eol-internal-enablement](prompts/eol-internal-enablement.md)** | Support FAQ, sales scripts, objection handling, escalation playbook | Before the announcement hits customers |
+| **[eol-for-a-product-message](prompts/eol-for-a-product-message.md)** | Customer-facing EOL announcement (with or without a replacement) | Time to tell the customers |
+| **[product-sunset-workshop](workshops/product-sunset-workshop.md)** | Full facilitated sunset plan, section by section with checkpoints | You want to think it all through in one guided session |
+
+**The Goldilocks rule:** every prompt asks how complex the sunset is before generating output. Tier 1 (feature deprecation) gets light-touch artifacts. Tier 2 (commercial product) gets the standard cross-functional process. Tier 3 (revenue-critical, hardware, or regulated) gets everything. The goal is coverage proportional to risk, not maximum ceremony.
 
 ### "I need evidence about the market, not another meeting"
 

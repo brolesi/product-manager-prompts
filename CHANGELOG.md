@@ -2,6 +2,32 @@
 
 ## Unreleased
 
+**Product End-of-Life gets real coverage.** PMs sweat pricing, P&Ls,
+business cases, and build/buy/partner decisions. EOL rarely makes
+that list -- which is exactly why it goes badly. The repo had one
+messaging prompt and a workshop; the full lifecycle was unserved.
+
+- **Four new EOL prompts**, each right-sized by a three-tier complexity
+  model so a feature deprecation gets a punch list and a flagship
+  retirement gets the full cross-functional playbook:
+  - `eol-readiness-assessment.md` — go/no-go decision with a 7-question
+    diagnostic and complexity-tier classification
+  - `eol-checklist.md` — phase-gated tactical checklist (NSC through
+    EOSRV) across up to 15 functional areas, filtered by tier
+  - `eol-stakeholder-sequence.md` — who to talk to, in what order,
+    encoding the hard-won lesson that Legal comes before Finance comes
+    before Sales comes before the customer announcement
+  - `eol-internal-enablement.md` — support FAQ, sales talking points,
+    objection-handling scripts (Acknowledge-Reframe-Offer), escalation
+    playbook, and optional channel partner brief and training outline
+- **`eol-for-a-product-message.md` rewritten.** Now right-sizes the
+  message (Brief / Standard / Full), supports three transition paths
+  (Replacement, Migration, or Graceful Exit for when there is no
+  replacement), and adds explicit lifecycle-phase definitions so
+  customers know the difference between End of Sale and End of Service.
+- **`product-sunset-workshop.md` updated** to cross-reference the new
+  enablement and premortem prompts in its Final Step options.
+
 **`skills/` becomes a first-class tier.** The directory arrived with a
 single Agent Skill and no contract behind it — absent from every
 directory map, the README, the catalog, and the validator. It is now

@@ -100,9 +100,9 @@ Then append a closing self-critique:
 
 Offer exactly 4 next options:
 
-1. Generate a customer-facing EOL announcement draft (pointing to [eol-for-a-product-message.md](../prompts/eol-for-a-product-message.md)) (Recommended)
-2. Draft an internal customer support team FAQ for handling objections
+1. Generate a customer-facing EOL announcement draft (using [eol-for-a-product-message.md](../prompts/eol-for-a-product-message.md)) (Recommended)
+2. Build the internal enablement pack for Support and Sales (using [eol-internal-enablement.md](../prompts/eol-internal-enablement.md))
 3. Create an account-by-account migration tracking sheet
-4. Run a pre-mortem on potential customer/PR escalations of this sunset
+4. Run a pre-mortem on potential customer/PR escalations of this sunset (using [premortem-prompt-template.md](../prompts/premortem-prompt-template.md))
 
 Ask the user to reply with `1`, `2`, `3`, `4`, `1 and 2`, or a custom path.

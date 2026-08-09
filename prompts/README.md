@@ -78,6 +78,19 @@ Research and analytical frameworks for strategic decisions:
 | **[lean-ux-canvas-prompt-template.md](lean-ux-canvas-prompt-template.md)** | Framing initiatives as hypotheses and experiments | Gothelf Lean UX Canvas v2 |
 | **[reverse-engineer-IEEE830srs-to-PRD-prompt-template.md](reverse-engineer-IEEE830srs-to-PRD-prompt-template.md)** | Translating technical requirements | IEEE 830 standards |
 
+### Product End-of-Life (EOL)
+Right-sized tools for the full sunset lifecycle -- from the go/no-go decision through the last support call:
+
+| Prompt | Best For | Framework Used |
+|--------|----------|----------------|
+| **[eol-readiness-assessment.md](eol-readiness-assessment.md)** | Deciding whether to sunset and scoping the effort | 7-question diagnostic + 3-tier complexity model |
+| **[eol-checklist.md](eol-checklist.md)** | Phase-gated tactical checklist across up to 15 functional areas | GA/NSC/EOS/EOE/EOM/EOL/EOSRV lifecycle phases |
+| **[eol-stakeholder-sequence.md](eol-stakeholder-sequence.md)** | Ordering stakeholder conversations so each informs the next | Legal-first sequencing + EOL-specific Mendelow |
+| **[eol-internal-enablement.md](eol-internal-enablement.md)** | Preparing Support, Sales, and CS before the announcement | Acknowledge-Reframe-Offer objection pattern |
+| **[eol-for-a-product-message.md](eol-for-a-product-message.md)** | Customer-facing EOL announcement with or without a replacement | 3-path messaging (Replacement, Migration, Graceful Exit) |
+
+Every EOL prompt right-sizes output to the complexity of the sunset. A feature deprecation produces a short punch list; a flagship retirement produces the full cross-functional playbook.
+
 ### Communication & Vision
 Tools for stakeholder alignment and storytelling:
 
