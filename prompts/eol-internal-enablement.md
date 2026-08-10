@@ -61,9 +61,8 @@ Then proceed with clearly labeled assumptions.
 
 ## Attribution:
 Created by Dean Peters (Productside.com), August 2026.
-Grounded in field experience across EOL enablement efforts and
-informed by common failure patterns in customer-facing team
-readiness.
+Grounded in industry EOL enablement practice and common failure
+patterns in customer-facing team readiness.
 
 ## Licensing:
 CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.

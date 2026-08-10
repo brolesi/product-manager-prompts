@@ -64,8 +64,8 @@ Then proceed with clearly labeled assumptions.
 
 ## Attribution:
 Created by Dean Peters (Productside.com), August 2026.
-Sequencing framework grounded in field experience across multiple
-EOL engagements and documented in eol-post.md.
+Sequencing framework grounded in standard EOL communication
+practice: legal exposure first, then financial, then operational.
 
 ## Licensing:
 CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.

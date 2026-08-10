@@ -23,8 +23,7 @@ Pedagogic framing for readers:
 
 ## Attribution:
 Created by Dean Peters. Framework inspired by Simon Sinek's Start With Why /
-Golden Circle approach. Enhanced with pedagogic guidance from user-provided
-Start With Why notes (March 2026).
+Golden Circle approach.
 
 ## Licensing:
 CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
