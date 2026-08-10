@@ -2,6 +2,45 @@
 
 ## Unreleased
 
+**Attributions cite public sources only, and CI now enforces the
+contract.** Four attribution lines sourced their content to private
+material. None named a customer, but each publicly asserted the work
+came out of real client engagements — which is a claim about
+confidential work, and the quiet way customer detail escapes a public
+repo. The clearest tell: `eol-stakeholder-sequence.md` cited
+`eol-post.md`, a file that does not exist here and never has.
+
+- **Scrubbed and rewritten as the practice itself.** "Grounded in field
+  experience across multiple EOL engagements" became the actual
+  ordering rule — legal exposure, then financial, then operational —
+  which is public, checkable, and more useful than the appeal to
+  experience it replaced. Same treatment for
+  `eol-internal-enablement.md`, `eol-readiness-assessment.md`, and the
+  Starts-with-Why generator's citation of private notes.
+- **The rule is now in `AGENTS.md`** under Required Metadata, plus the
+  pre-PR checklist: cite books, articles, published talks, named
+  frameworks, public URLs, and our own Productside course and playbook
+  material. Never decks, private notes, or client work. Two tests make
+  it decidable at review time — could a reader follow this citation to
+  the source, and does this line imply I was in a room I cannot name?
+- **`CLAUDE.md` is tracked.** It was ignored as a "system file," but it
+  is the authoring contract's fast path and is written as a pair with
+  `AGENTS.md`. Shipping only one half meant contributors got the full
+  contract and none of the orientation, while the local copy drifted
+  unreviewed — it had already gone stale on the `skills/` naming
+  convention.
+- **`catalog/prompts-index.yaml` ships.** A blanket `*.yml`/`*.yaml`
+  ignore, redundant with `.github/`, had been hiding the
+  machine-readable index the catalog script writes on every run.
+- **Catalog output is deterministic.** Dropped the generation
+  timestamps, so regeneration is byte-identical when nothing changed
+  and a catalog diff always means real drift.
+- **`.github/` unignored, with a `Validate` workflow** running
+  `validate-prompts.py` and a catalog-staleness check on every push and
+  PR. The attribution leak above survived review precisely because
+  nothing ran automatically. The staleness gate is only possible
+  because the timestamps are gone.
+
 **Product End-of-Life gets real coverage.** PMs sweat pricing, P&Ls,
 business cases, and build/buy/partner decisions. EOL rarely makes
 that list -- which is exactly why it goes badly. The repo had one
