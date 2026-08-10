@@ -1,0 +1,37 @@
+name: Validate
+
+# The authoring contract in AGENTS.md is only as good as what enforces
+# it. Both scripts are stdlib-only, so this needs no dependency install.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # Metadata blocks, Generative Guidance v2 fixtures, coupling
+      # discipline, skills contract, and the repo-wide licensing sweep.
+      # Exits non-zero on errors; warnings are the migrate-on-touch list.
+      - name: Structural and licensing checks
+        run: python3 scripts/validate-prompts.py
+
+      # catalog/ is derived output and must never be hand-edited, so the
+      # only question worth asking is whether it matches the assets.
+      # Regeneration is deterministic (no timestamps), so any diff here
+      # means someone edited a prompt without regenerating.
+      - name: Catalog is current
+        run: |
+          python3 scripts/generate-catalog.py
+          if ! git diff --exit-code --stat catalog/; then
+            echo "::error::catalog/ is stale. Run: python3 scripts/generate-catalog.py"
+            exit 1
+          fi

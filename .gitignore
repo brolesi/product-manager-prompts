@@ -1,12 +1,7 @@
-# Claude Code system files
-CLAUDE.md
-
-# GitHub workflows and actions
-# Scoped to .github/ on purpose. A blanket *.yml/*.yaml here was
-# redundant (.github/ already covers the workflow files) and its only
-# real effect was hiding catalog/prompts-index.yaml, which is a
-# published asset.
-.github/
+# Claude Code local state. CLAUDE.md is NOT listed here on purpose:
+# it is the authoring contract's fast path, not tool state, and it is
+# tracked so it cannot drift from AGENTS.md unreviewed.
+.claude/worktrees/
 
 # System files
 .DS_Store
