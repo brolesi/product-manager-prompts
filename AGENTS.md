@@ -118,6 +118,40 @@ one or two lines naming the *situations* where this prompt is the
 wrong tool. Name situations, not alternative files -- see Coupling
 Discipline. Misuse boundaries are part of the hidden curriculum.
 
+### Attribution: cite public sources only
+
+This repository is public. An `Attribution` line is published, so it
+must only name sources a reader could actually go find.
+
+**Cite:** books, articles, published talks and webinars, blog posts,
+named frameworks, public URLs, and this library's own reference files.
+Productside course and playbook material is fine -- that is our own
+material, not customer information.
+
+**Do not cite:** decks, private or working notes, unpublished drafts,
+internal documents, or client work.
+
+**The trap is the unnamed engagement.** "Grounded in field experience
+across multiple EOL engagements" names no customer, which is exactly
+why it slips through -- but it publicly asserts the content came out
+of confidential client work. That is a claim about a customer even
+without the customer's name, and it is the quiet way customer detail
+escapes a public repo. Four attribution lines carried this before it
+was caught; one of them cited `eol-post.md`, a file that does not
+exist in this repo and never has -- a public citation pointing at a
+private document.
+
+**Write the substance instead of the provenance.** If the ordering
+rule is legal exposure, then financial, then operational, say that.
+The rule is the useful part, it is checkable, and it stands on its
+own. "Trust me, I have done a lot of these" teaches nothing and
+discloses something.
+
+**Two tests before publishing an attribution.** Could a reader follow
+this citation to the source? If not, it is not a citation. And: does
+this line imply I was in a room I cannot name? If so, rewrite it as
+the practice itself.
+
 ## Agent Skills (`skills/`)
 
 A skill is a prompt packaged so an agent can decide, unprompted, that it
@@ -299,7 +333,10 @@ Run this quick check before finalizing:
    `prompts/` finishes the job cold.
 6. Any code/doc mismatch resolved.
 7. No burden-shifting questions; decision options are persona-first and context-aware.
-8. `python3 scripts/validate-prompts.py` passes.
+8. Attribution cites only sources a reader could go find. No decks, no
+   private notes, no client work -- and no unnamed engagements
+   ("field experience across multiple X engagements").
+9. `python3 scripts/validate-prompts.py` passes.
 
 ## PR Notes
 In change summaries, include:
